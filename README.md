@@ -1,4 +1,9 @@
 # Manage github repos
+
+![Alt Text](./demo.gif)
+
+A cli to manage your repositories (at least delete for now)
+
 ## install
 > npx manage-repos
 
