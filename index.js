@@ -1,5 +1,6 @@
 const { Octokit } = require("@octokit/rest");
 const { DELETE, ARCHIEVE } = require('./constants');
+const inquirer = require('inquirer');
 
 if (!process.env.ACCESS_CODE) {
 	throw new Error('no access code found');
