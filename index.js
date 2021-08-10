@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const { Octokit } = require("@octokit/rest");
 const { DELETE, ARCHIEVE } = require('./constants');
 
