@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 const { Octokit } = require("@octokit/rest");
 const { DELETE, ARCHIEVE } = require('./constants');
 
@@ -28,7 +26,7 @@ async function processAction(response, repo, user) {
 	return false;
 }
 
-async function run() {
+module.exports = async function run() {
 	const { data } = await octokit.request("/user");
 	const user = data.login;
 	
@@ -56,6 +54,3 @@ async function run() {
 		await processAction(response, name, user)
 	}
 }
-
-run();
-

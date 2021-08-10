@@ -1,8 +1,8 @@
 {
   "name": "manage-repos",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "bin": {
-    "manage-repos": "index"
+    "manage-repos": "bin/manage-repos.js"
   },
   "main": "index.js",
   "license": "MIT",
